@@ -4,10 +4,15 @@ using UnityEngine;
 
 public  class RedCylinder : BaseCube // INHERITANCE : RedCylinder inherit from BaseCube.
 {
-   
-   public override void OnMouseDown() //polymorphism 
+    public override void OnMouseOver() //polymorphism 
    {
-      ShapeName.SetActive(true);
+       shapeObject.SetActive(true);
+       ShapeColor.color = Color.red;
    }
 
+   public override void OnMouseExit()
+   {
+       base.shapeObject.SetActive(false);
+       ShapeColor.color = Color.black;
+   }
 }
