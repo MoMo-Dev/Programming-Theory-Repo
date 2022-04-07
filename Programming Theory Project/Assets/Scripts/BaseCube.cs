@@ -21,7 +21,7 @@ public  class BaseCube : MonoBehaviour
    private void Start()
    {
        shapeObject.SetActive(false);
-       //ShapeColor.color = Color.green;
+       
    }
 
     public virtual void OnMouseOver() //polymorphism 
